@@ -66,3 +66,13 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+super() will calls the constructor of its parent class. This is required when you need to access some variables from the parent class.
+https://stackoverflow.com/questions/40433463/what-does-calling-super-in-a-react-constructor-do
+
+jets the test runner(created by facebook) fires when we use 'npm run test' command just looks for tests in the test directory or anything with the test.js extension
+Create React App uses Jest as its test runner.
+Jest is a Node-based runner. This means that the tests always run in a Node environment and not in a real browser. This lets us enable fast iteration speed and prevent flakiness.
+Jest is intended to be used for unit tests of your logic and your components rather than the DOM quirks.
+
+when you run create-react-app one of the libraries that got loaded automatically was the Jest test suite.
